@@ -7,7 +7,7 @@
 /*Estilos Barra de Navegación utilizando Mobile First*/
 .nav-container {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-columns: 1fr;
   height: max-content;
   align-items: center;
   margin-bottom: auto;

@@ -1,66 +1,300 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="shortcut icon" href="./icons/icono.png" type="image/x-icon">
+<html lang="es">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- Bootstrap CSS -->
     <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
       rel="stylesheet"
-      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
     />
-    <link rel="stylesheet" href="./styles/style.css">
-    <script src="https://kit.fontawesome.com/ba3e5f609c.js" crossorigin="anonymous"></script>
+    <!-- Font Awesome -->
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+      rel="stylesheet"
+    />
+    <!-- Google Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- MDB -->
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/6.4.2/mdb.min.css"
+      rel="stylesheet"
+    />
+
+    <!--Styles-->
+    <link rel="stylesheet" href="./styles/style.css" />
     <title>Dormitorio</title>
-</head>
-<body>
+  </head>
+  <body>
     <header>
+      <div class="nav-container">
+        <div class="hamb-nav">
+          <nav class="navbar navbar-light bg-light">
+            <div class="container-fluid">
+              <button
+                class="navbar-toggler"
+                type="button"
+                data-mdb-toggle="collapse"
+                data-mdb-target="#navbarToggleExternalContent"
+                aria-controls="navbarToggleExternalContent"
+                aria-expanded="false"
+                aria-label="Toggle navigation"
+              >
+                <i class="fas fa-bars"></i>
+              </button>
+            </div>
+          </nav>
+          <div class="collapse" id="navbarToggleExternalContent">
+            <div class="bg-light shadow-3 p-4">
+              <a
+                class="btn btn-link btn-block border-bottom m-0 fs-2"
+                href="./index.html"
+                >Home</a
+              >
+              <a
+                class="btn btn-link btn-block border-bottom m-0 fs-2"
+                href="./comedor.html"
+                >Comedor</a
+              >
+
+              <a
+                class="btn btn-link btn-block border-bottom m-0 fs-2"
+                href="./cocina.html"
+                >Cocina</a
+              >
+
+              <a
+                class="btn btn-link btn-block border-bottom m-0 fs-2"
+                href="./dormitorio.html"
+                >Dormitorio</a
+              >
+
+              <a class="btn btn-link btn-block m-0 fs-2" href="./contacto.html"
+                >Contacto</a
+              >
+            </div>
+          </div>
+        </div>
+
         <div class="logo-container">
-          <a href="./index.html" title="Home"><img class="logo" src="./img/Logo.png" alt="Logo" /></a>
+          <a href="./index.html" title="Home"
+            ><img class="logo" src="./img/Logo.png" alt="Logo"
+          /></a>
+        </div>
+
+        <div class="busqueda">
+          <div class="input-group rounded">
+            <input
+              type="search"
+              class="form-control rounded"
+              placeholder="Buscar"
+              aria-label="Search"
+              aria-describedby="search-addon"
+            />
+            <span class="input-group-text border-0" id="search-addon">
+              <i class="fas fa-search"></i>
+            </span>
           </div>
-          <div class="nav-container">
-            <ul class="nav-items">
-              <li class="li-nav"><a href="./index.html">Home</a></li>
-              <li class="li-nav"><a href="./comedor.html">Comedor</a></li>
-              <li class="li-nav"><a href="./cocina.html">Cocina</a></li>
-              <li class="li-nav"><a href="./dormitorio.html">Dormitorio</a></li>
-              <li class="li-nav"><a href="./contacto.html">Contacto</a></li>
-            </ul>
-          </div>
-          <div class="search-container">
-            <input type="text" name="search" id="search" class="input-search" />
-            <label for="search"
-              ><span class="material-symbols-outlined">
-                search
-                </span>
-          </div>
+        </div>
+      </div>
     </header>
     <main>
+      <h1 class="titulo">Linea de Dormitorio</h1>
       <div class="dormitorio-container">
-        <img class="novedades" src="./img/dormitorio1.jpg" alt="imagen1">
-        <img class="novedades" src="./img/dormitorio1.jpg" alt="imagen2">
-        <img class="novedades" src="./img/dormitorio1.jpg" alt="imagen3">
-        <img class="novedades" src="./img/dormitorio1.jpg" alt="imagen4">
-        <img class="novedades" src="./img/dormitorio1.jpg" alt="imagen5">
-        <img class="novedades" src="./img/dormitorio1.jpg" alt="imagen6">
-        <img class="novedades" src="./img/dormitorio1.jpg" alt="imagen7">
-        <img class="novedades" src="./img/dormitorio1.jpg" alt="imagen8">
+        <div class="card">
+          <div class="card-body">
+            <h5 class="card-title">Título de la tarjeta</h5>
+            <p class="card-text">Acá va el texto sobre el producto</p>
+            <p class="card-text">
+              <small class="text-muted">El producto ingresó el día ...</small>
+            </p>
+          </div>
+          <img
+            src="./img/dormitorio1.jpg"
+            class="card-img-bottom"
+            alt="Camera"
+          />
+        </div>
+        <div class="card">
+          <div class="card-body">
+            <h5 class="card-title">Título de la tarjeta</h5>
+            <p class="card-text">Acá va el texto sobre el producto</p>
+            <p class="card-text">
+              <small class="text-muted">El producto ingresó el día ...</small>
+            </p>
+          </div>
+          <img
+            src="./img/dormitorio1.jpg"
+            class="card-img-bottom"
+            alt="Camera"
+          />
+        </div>
+        <div class="card">
+          <div class="card-body">
+            <h5 class="card-title">Título de la tarjeta</h5>
+            <p class="card-text">Acá va el texto sobre el producto</p>
+            <p class="card-text">
+              <small class="text-muted">El producto ingresó el día ...</small>
+            </p>
+          </div>
+          <img
+            src="./img/dormitorio1.jpg"
+            class="card-img-bottom"
+            alt="Camera"
+          />
+        </div>
+        <div class="card">
+          <div class="card-body">
+            <h5 class="card-title">Título de la tarjeta</h5>
+            <p class="card-text">Acá va el texto sobre el producto</p>
+            <p class="card-text">
+              <small class="text-muted">El producto ingresó el día ...</small>
+            </p>
+          </div>
+          <img
+            src="./img/dormitorio1.jpg"
+            class="card-img-bottom"
+            alt="Camera"
+          />
+        </div>
+        <div class="card">
+          <div class="card-body">
+            <h5 class="card-title">Título de la tarjeta</h5>
+            <p class="card-text">Acá va el texto sobre el producto</p>
+            <p class="card-text">
+              <small class="text-muted">El producto ingresó el día ...</small>
+            </p>
+          </div>
+          <img
+            src="./img/dormitorio1.jpg"
+            class="card-img-bottom"
+            alt="Camera"
+          />
+        </div>
+        <div class="card">
+          <div class="card-body">
+            <h5 class="card-title">Título de la tarjeta</h5>
+            <p class="card-text">Acá va el texto sobre el producto</p>
+            <p class="card-text">
+              <small class="text-muted">El producto ingresó el día ...</small>
+            </p>
+          </div>
+          <img
+            src="./img/dormitorio1.jpg"
+            class="card-img-bottom"
+            alt="Camera"
+          />
+        </div>
       </div>
     </main>
-    <footer>
-      <div class="redes">
-        <h3>Seguinos en nuestras Redes Sociales:</h3>
-        <a href="http://facebook.com" target="_blank" rel="noopener noreferrer" title="facebook"><i class="fa-brands fa-facebook"></i></a>
-        <a href="http://instagram.com" target="_blank" rel="noopener noreferrer" title="Instagram"><i class="fa-brands fa-instagram"></i></a>
-        <a href="http://twitter.com" target="_blank" rel="noopener noreferrer" title="Twitter"><i class="fa-brands fa-twitter"></i></a>
+    <footer class="text-center text-dark">
+      <h4>Seguinos en nuestras redes sociales</h4>
+      <!-- Grid container -->
+      <div class="container">
+        <!-- Section: Social media -->
+        <section class="mb-0">
+          <!-- Facebook -->
+          <a
+            class="btn btn-link btn-floating btn-lg text-dark m-1"
+            href="http://facebook.com/"
+            role="button"
+            data-mdb-ripple-color="dark"
+            title="Facebook"
+            target="_blank"
+            rel="noopener noreferrer"
+            ><i class="fab fa-facebook-f"></i
+          ></a>
+
+          <!-- Twitter -->
+          <a
+            class="btn btn-link btn-floating btn-lg text-dark m-1"
+            href="http://twitter.com/"
+            role="button"
+            data-mdb-ripple-color="dark"
+            title="Twitter"
+            target="_blank"
+            rel="noopener noreferrer"
+            ><i class="fab fa-twitter"></i
+          ></a>
+
+          <!-- Instagram -->
+          <a
+            class="btn btn-link btn-floating btn-lg text-dark m-1"
+            href="http://instagram.com/"
+            role="button"
+            data-mdb-ripple-color="dark"
+            title="Instagram"
+            target="_blank"
+            rel="noopener noreferrer"
+            ><i class="fab fa-instagram"></i
+          ></a>
+
+          <!-- Linkedin -->
+          <a
+            class="btn btn-link btn-floating btn-lg text-dark m-1"
+            href="https://www.linkedin.com/"
+            role="button"
+            data-mdb-ripple-color="dark"
+            title="Linkedin"
+            target="_blank"
+            rel="noopener noreferrer"
+            ><i class="fab fa-linkedin"></i
+          ></a>
+          
+          <!--WhatsApp-->
+          <a
+            class="btn btn-link btn-floating btn-lg text-dark m-1"
+            href="https://api.whatsapp.com/send?phone=+1155588888"
+            title="WhastApp"
+          ><i class="fa-brands fa-whatsapp"></i><a/>
+
+          <a 
+          class="btn btn-link btn-floating btn-lg text-dark m-1"
+          href="mailto:lapausa@gmail.com" 
+          target="_blank" 
+          rel="noopener noreferrer" 
+          title="Mail"><i class="fa-regular fa-envelope"></i></a>
+
+
+          <!-- Github -->
+          <a
+            class="btn btn-link btn-floating btn-lg text-dark m-1"
+            href="https://github.com/JuanGabrielChaves"
+            role="button"
+            data-mdb-ripple-color="dark"
+            title="GitHub"
+            target="_blank"
+            rel="noopener noreferrer"
+            ><i class="fab fa-github"></i
+          ></a>
+        </section>
+        <!-- Section: Social media -->
       </div>
-      <div class="wpp">
-        <h3>Contactanos a nuestro WhastApp:</h3>
-        <a href="https://api.whatsapp.com/send?phone=+1155588888" title="WhastApp"><i class="fa-brands fa-whatsapp"></i></a><span>1155588888</span>
+      <!-- Grid container -->
+
+      <!-- Copyright -->
+      <div class="text-center text-dark p-3 copyright">
+        © 2023 Copyright:
+        <a class="text-dark" href="https://mdbootstrap.com/">LaPausa.com</a>
       </div>
-      <div class="contactanos">
-        <h3>Contactanos</h3>
-        <a href="mailto:lapausa@gmail.com" target="_blank" rel="noopener noreferrer" title="Mail"><i class="fa-regular fa-envelope"></i></a>
-      </div>
+      <!-- Copyright -->
     </footer>
-</body>
+    <!-- MDB -->
+    <script
+      type="text/javascript"
+      src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/6.4.2/mdb.min.js"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
+  </body>
 </html>
