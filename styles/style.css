@@ -1,97 +1,62 @@
-/*Reset*/
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
-/*Estilos Barra de Navegación utilizando Mobile First*/
-.nav-container {
-  display: grid;
-  grid-template-columns: 1fr;
-  height: max-content;
-  align-items: center;
-  margin-bottom: auto;
-  position: sticky;
-  top: 0;
-  margin-bottom: 10px;
-}
-.hamb-nav {
-  position: relative;
-  top: 0;
+.main {
+  height: 80vh;
   overflow: auto;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+}
+.titulo {
+  display: block;
+  text-align: center;
+  margin-top: 20%;
+  margin-bottom: 1rem;
 }
 
-.logo-container {
-  display: inline-block;
-  position: absolute;
-  width: 100%;
-  border: none;
-  top: 0;
-  left: 15%;
+.nav-link {
+  color: #4f4f4f;
 }
-.logo {
-  padding: 0;
-  margin: 0;
-  width: 200px;
-  height: 80%;
+.card:hover {
+  transform: scale(1.01);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.12), 0 4px 8px rgba(0, 0, 0, 0.06);
 }
 
-.busqueda {
-  position: absolute;
-  top: 15px;
-  left: 62%;
+.formulario {
+  width: 80%;
+  margin: auto;
 }
 
-/*Estilos en el main*/
-main {
-  display: grid;
+.mapa {
+  display: flex;
   justify-content: center;
   align-items: center;
-  padding-top: 20px;
-  height: auto;
-  overflow: auto;
-}
-
-.titulo {
-  text-align: center;
-}
-
-.novedades-container {
-  width: 95%;
-  margin: auto;
-  overflow: auto;
-}
-.novedades-container::-webkit-scrollbar,
-.dormitorio-container::-webkit-scrollbar,
-.cocina-container::-webkit-scrollbar {
-  width: 5px;
-  height: 8px;
-  background-color: rgb(228, 221, 221); /* or add it to the track */
-}
-.novedades-container::-webkit-scrollbar-thumb,
-.dormitorio-container::-webkit-scrollbar-thumb,
-.cocina-container::-webkit-scrollbar-thumb {
-  background: #000;
-}
-.novedades {
-  width: 94%;
-  margin: 10px;
 }
 
 footer {
-  background-color: bisque;
-  display: block;
-  bottom: 0%;
+  margin-top: 1rem;
 }
-footer h4 {
-  text-align: center;
-}
-footer a i {
-  width: 50px;
+footer a i:hover {
+  transform: scale(2);
 }
 
-footer .copyright {
-  background-color: rgba(0, 0, 0, 0.2);
-}
+/*Media Querys*/
 
-/*Media Queries*/
+/*Estilos para Tablet*/
+@media screen and (min-width: 768px) {
+  .novedades-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-areas: "card card card";
+    width: 100%;
+    gap: 1rem;
+  }
+
+  .titulo {
+    position: relative;
+    margin-top: 10%;
+  }
+}
