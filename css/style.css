@@ -1,8 +1,11 @@
+/*Variables*/
+/*Reset*/
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
+
 .main {
   height: 80vh;
   overflow: auto;
@@ -10,6 +13,7 @@
   justify-content: center;
   align-content: center;
 }
+
 .titulo {
   display: block;
   text-align: center;
@@ -20,6 +24,12 @@
 .nav-link {
   color: #4f4f4f;
 }
+
+.card {
+  width: 400px;
+  margin: auto;
+}
+
 .card:hover {
   transform: scale(1.01);
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.12), 0 4px 8px rgba(0, 0, 0, 0.06);
@@ -39,12 +49,12 @@
 footer {
   margin-top: 1rem;
 }
+
 footer a i:hover {
   transform: scale(2);
 }
 
 /*Media Querys*/
-
 /*Estilos para Tablet*/
 @media screen and (min-width: 768px) {
   .novedades-container {
@@ -54,9 +64,10 @@ footer a i:hover {
     width: 100%;
     gap: 1rem;
   }
-
   .titulo {
     position: relative;
     margin-top: 10%;
   }
 }
+
+/*# sourceMappingURL=style.css.map */
