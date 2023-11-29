@@ -67,18 +67,80 @@ footer a i:hover {
   transform: scale(2);
 }
 
-/*Estilos para Tablet*/
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 280px) {
+  .navbar-brand {
+    display: none;
+  }
+  .card {
+    width: 95vw;
+  }
   .novedades-container {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-areas: "card card card";
+    grid-template-columns: 1fr;
+    grid-template-areas: "card ";
     width: 100%;
-    gap: 1rem;
   }
   .titulo {
     position: relative;
+    margin-top: 25%;
+  }
+  .botonera-redes {
+    width: 100vw;
+  }
+}
+@media screen and (min-width: 360px) {
+  .card {
+    width: 85vw;
+  }
+  .botonera-redes {
+    width: 340px;
+  }
+}
+@media screen and (min-width: 360px) {
+  .botonera-redes {
+    width: 385px;
+  }
+}
+/*Estilos para Tablet*/
+@media screen and (min-width: 768px) {
+  .novedades-container {
+    grid-template-columns: 1fr;
+    grid-template-areas: "card  ";
+    gap: 1rem;
+  }
+  .titulo {
     margin-top: 10%;
+  }
+  .botonera-redes {
+    margin: 0;
+    width: 90vw;
+  }
+}
+@media screen and (min-width: 912px) {
+  .card {
+    width: 70%;
+  }
+  .botonera-redes {
+    margin: 0;
+    width: 80vw;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .card {
+    width: 93%;
+  }
+  .novedades-container {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-areas: "card card";
+    gap: 1rem;
+  }
+  .botonera-redes {
+    width: 90vw;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .card {
+    width: 90%;
   }
 }
 
