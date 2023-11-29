@@ -23,6 +23,7 @@
 }
 
 @media screen and (min-width: 360px) {
+  
   .card {
     width: 85vw;
   }
@@ -30,8 +31,16 @@
     width: 385px;
   }
 }
+@media screen and (min-width: 540px) {
+  .botonera-redes {
+    width: 100%;
+  }
+}
 
 @media screen and (min-width: 768px) {
+  .navbar-brand {
+    display: block;
+  }
   .novedades-container {
     grid-template-columns: 1fr;
     grid-template-areas: "card  ";
@@ -78,6 +87,6 @@
     grid-template-areas: "card card card";
   }
   .card {
-    width: 80%;
+    width: 90%;
   }
 }

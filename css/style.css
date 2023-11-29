@@ -52,6 +52,54 @@
   width: 80%;
   margin: auto;
 }
+.formulario .btn-submit {
+  width: 100px;
+  display: inline-block;
+  padding: 0.75rem 1.25rem;
+  border-radius: 10rem;
+  color: #4f4f4f;
+  text-transform: uppercase;
+  font-size: 1rem;
+  letter-spacing: 0.15rem;
+  transition: all 0.3s;
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
+  left: 45%;
+}
+.formulario .btn-submit:after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #0cf;
+  border-radius: 10rem;
+  z-index: -2;
+}
+.formulario .btn-submit:before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0%;
+  height: 100%;
+  background-color: #008fb3;
+  transition: all 0.3s;
+  border-radius: 10rem;
+  z-index: -1;
+}
+.formulario .btn-submit:hover {
+  color: #fff;
+}
+.formulario .btn-submit:hover:before {
+  width: 100%;
+}
+
+h3 {
+  text-align: center;
+}
 
 .mapa {
   display: flex;
@@ -96,7 +144,15 @@ footer a i:hover {
     width: 385px;
   }
 }
+@media screen and (min-width: 540px) {
+  .botonera-redes {
+    width: 100%;
+  }
+}
 @media screen and (min-width: 768px) {
+  .navbar-brand {
+    display: block;
+  }
   .novedades-container {
     grid-template-columns: 1fr;
     grid-template-areas: "card  ";
@@ -138,7 +194,7 @@ footer a i:hover {
     grid-template-areas: "card card card";
   }
   .card {
-    width: 80%;
+    width: 90%;
   }
 }
 

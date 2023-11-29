@@ -1,5 +1,5 @@
-@import './partials/colors';
-@import './partials/fonts';
+@import "./partials/colors";
+@import "./partials/fonts";
 /*Variables*/
 
 /*Reset*/
@@ -10,61 +10,120 @@
 }
 
 .main {
-    height: 80vh;
-    overflow: auto;
-    display: flex;
-    justify-content: center;
-    align-content: center;
+  height: 80vh;
+  overflow: auto;
+  display: flex;
+  justify-content: center;
+  align-content: center;
 }
+
 .titulo {
-    display: block;
+  display: block;
+  text-align: center;
+  margin-top: 20%;
+  margin-bottom: 1rem;
+}
+
+.nav-link {
+  color: $navColor;
+}
+
+.card {
+  width: 400px;
+  margin: 15px auto;
+
+  .card_title {
     text-align: center;
-    margin-top: 20%;
-    margin-bottom: 1rem;
   }
-  .nav-link {
+
+  .card_text {
+    margin: 0 10px;
+  }
+
+  .card_text .card_text-muted {
+    font-weight: bold;
+  }
+
+  img {
+    height: 300px;
+  }
+}
+
+.card:hover {
+  transform: scale(1.01);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.12), 0 4px 8px rgba(0, 0, 0, 0.06);
+}
+
+.formulario {
+  width: 80%;
+  margin: auto;
+
+  .btn-submit {
+    width: 100px;
+    display: inline-block;
+    padding: 0.75rem 1.25rem;
+    border-radius: 10rem;
     color: $navColor;
-  }
+    text-transform: uppercase;
+    font-size: 1rem;
+    letter-spacing: 0.15rem;
+    transition: all 0.3s;
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+    left: 45%;
 
-  .card{
-    width: 400px;
-    margin: 15px auto;
-
-    .card_title{
-      text-align: center;
-    }
-    .card_text{
-      margin: 0 10px;
-    }
-
-    .card_text .card_text-muted{
-      font-weight: bold;
+    &:after {
+      content: "";
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: $colorBtn;
+      border-radius: 10rem;
+      z-index: -2;
     }
 
-    img{
-      height: 300px;
+    &:before {
+      content: "";
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 0%;
+      height: 100%;
+      background-color: darken($colorBtn, 15%);
+      transition: all 0.3s;
+      border-radius: 10rem;
+      z-index: -1;
+    }
+
+    &:hover {
+      color: #fff;
+
+      &:before {
+        width: 100%;
+      }
     }
   }
-  .card:hover {
-    transform: scale(1.01);
-    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.12), 0 4px 8px rgba(0, 0, 0, 0.06);
-  }
-  .formulario {
-    width: 80%;
-    margin: auto;
-  }
-  
-  .mapa {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-  
-  footer {
-    margin-top: 1rem;
-  }
-  footer a i:hover {
-    transform: scale(2);
-  }
-  
-  @import './partials/queries';
+}
+
+h3{
+  text-align: center;
+}
+
+.mapa {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+footer {
+  margin-top: 1rem;
+}
+
+footer a i:hover {
+  transform: scale(2);
+}
+
+@import "./partials/queries";
