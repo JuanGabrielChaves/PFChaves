@@ -139,8 +139,12 @@ footer a i:hover {
   }
 }
 @media screen and (min-width: 1280px) {
+  .novedades-container {
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-areas: "card card card";
+  }
   .card {
-    width: 90%;
+    width: 80%;
   }
 }
 
