@@ -93,15 +93,9 @@ footer a i:hover {
     width: 85vw;
   }
   .botonera-redes {
-    width: 340px;
-  }
-}
-@media screen and (min-width: 360px) {
-  .botonera-redes {
     width: 385px;
   }
 }
-/*Estilos para Tablet*/
 @media screen and (min-width: 768px) {
   .novedades-container {
     grid-template-columns: 1fr;

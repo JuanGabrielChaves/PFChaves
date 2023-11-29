@@ -1,9 +1,8 @@
 @media screen and (min-width: 280px) {
-  
-  .navbar-brand{
+  .navbar-brand {
     display: none;
   }
-  .card{
+  .card {
     width: 95vw;
   }
   .novedades-container {
@@ -18,75 +17,67 @@
     margin-top: 25%;
   }
 
-  .botonera-redes{
+  .botonera-redes {
     width: 100vw;
   }
 }
 
 @media screen and (min-width: 360px) {
-
-  .card{
+  .card {
     width: 85vw;
   }
-  .botonera-redes{
-    width: 340px;
-  }
-}
-
-@media screen and (min-width: 360px) {
-  .botonera-redes{
+  .botonera-redes {
     width: 385px;
   }
 }
 
-/*Estilos para Tablet*/
 @media screen and (min-width: 768px) {
-    .novedades-container {
-      grid-template-columns: 1fr;
-      grid-template-areas: "card  ";
-      gap: 1rem;
-    }
-  
-    .titulo {
-      margin-top: 10%;
-    }
-
-    .botonera-redes{
-      margin: 0;
-      width: 90vw;
-    }
+  .novedades-container {
+    grid-template-columns: 1fr;
+    grid-template-areas: "card  ";
+    gap: 1rem;
   }
 
-  @media screen and (min-width: 912px) {
-    .card{
-      width: 70%;
-    }
-    .botonera-redes{
-      margin: 0;
-      width: 80vw;
-    }
+  .titulo {
+    margin-top: 10%;
   }
 
-  @media screen and (min-width: 1024px) {
-    .card{
-      width: 93%;
-    }
-    .novedades-container {
-      grid-template-columns: repeat(2,1fr);
-      grid-template-areas: "card card";
-      gap: 1rem;
-    }
-    .botonera-redes{
-      width: 90vw;
-    }
+  .botonera-redes {
+    margin: 0;
+    width: 90vw;
   }
+}
 
-  @media screen and (min-width: 1280px) {
-    .novedades-container {
-      grid-template-columns: repeat(3,1fr);
-      grid-template-areas: "card card card";
-    }
-    .card{
-      width: 80%;
-    }
+@media screen and (min-width: 912px) {
+  .card {
+    width: 70%;
   }
+  .botonera-redes {
+    margin: 0;
+    width: 80vw;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .card {
+    width: 93%;
+  }
+  .novedades-container {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-areas: "card card";
+    gap: 1rem;
+  }
+  .botonera-redes {
+    width: 90vw;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .novedades-container {
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-areas: "card card card";
+  }
+  .card {
+    width: 80%;
+  }
+}
