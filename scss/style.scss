@@ -1,3 +1,5 @@
+@import './partials/colors';
+@import './partials/fonts';
 /*Variables*/
 
 /*Reset*/
@@ -21,7 +23,7 @@
     margin-bottom: 1rem;
   }
   .nav-link {
-    color: #4f4f4f;
+    color: $navColor;
   }
 
   .card{
@@ -49,20 +51,5 @@
   footer a i:hover {
     transform: scale(2);
   }
-  /*Media Querys*/
-
-/*Estilos para Tablet*/
-@media screen and (min-width: 768px) {
-    .novedades-container {
-      display: grid;
-      grid-template-columns: 1fr 1fr 1fr;
-      grid-template-areas: "card card card";
-      width: 100%;
-      gap: 1rem;
-    }
   
-    .titulo {
-      position: relative;
-      margin-top: 10%;
-    }
-  }
+  @import './partials/queries';

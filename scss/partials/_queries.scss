@@ -1,0 +1,16 @@
+
+/*Estilos para Tablet*/
+@media screen and (min-width: 768px) {
+    .novedades-container {
+      display: grid;
+      grid-template-columns: repeat(3,1fr);
+      grid-template-areas: "card card card";
+      width: 100%;
+      gap: 1rem;
+    }
+  
+    .titulo {
+      position: relative;
+      margin-top: 10%;
+    }
+  }
