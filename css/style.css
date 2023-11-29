@@ -20,10 +20,15 @@
   text-align: center;
   margin-top: 20%;
   margin-bottom: 1rem;
+  font-family: "Roboto";
 }
 
 .nav-link {
   color: #4f4f4f;
+}
+
+.nav-link:hover {
+  transform: scale(1.1);
 }
 
 .card {
