@@ -30,6 +30,15 @@
   width: 400px;
   margin: 15px auto;
 }
+.card .card_title {
+  text-align: center;
+}
+.card .card_text {
+  margin: 0 10px;
+}
+.card .card_text .card_text-muted {
+  font-weight: bold;
+}
 .card img {
   height: 300px;
 }
