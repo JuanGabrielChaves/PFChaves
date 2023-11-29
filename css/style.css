@@ -28,7 +28,10 @@
 
 .card {
   width: 400px;
-  margin: auto;
+  margin: 15px auto;
+}
+.card img {
+  height: 300px;
 }
 
 .card:hover {

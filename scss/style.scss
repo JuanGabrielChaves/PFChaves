@@ -28,7 +28,11 @@
 
   .card{
     width: 400px;
-    margin: auto;
+    margin: 15px auto;
+
+    img{
+      height: 300px;
+    }
   }
   .card:hover {
     transform: scale(1.01);
