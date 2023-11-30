@@ -116,6 +116,30 @@ footer {
   margin-top: 1rem;
 }
 
+.fa-facebook-f {
+  color: #4267B2;
+}
+
+.fa-twitter {
+  color: #1DA1F2;
+}
+
+.fa-instagram {
+  color: #FD1D1D;
+}
+
+.fa-linkedin {
+  color: #0a66c2;
+}
+
+.fa-whatsapp {
+  color: #075E54;
+}
+
+.fa-envelope {
+  color: #004f9f;
+}
+
 footer a i:hover {
   transform: scale(2);
 }

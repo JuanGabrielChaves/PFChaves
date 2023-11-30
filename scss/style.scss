@@ -126,8 +126,34 @@ footer {
   margin-top: 1rem;
 }
 
+@mixin boton($color) {
+	color: $color;
+}
+
+.fa-facebook-f{
+  @include boton($facebook);
+}
+
+.fa-twitter{
+  @include boton($twitter);
+}
+
+.fa-instagram{
+  @include boton($instagram);
+}
+
+.fa-linkedin{
+  @include boton($linkedin);
+}
+
+.fa-whatsapp{
+  @include boton($whatsApp);
+}
+
+.fa-envelope{
+  @include boton($email);
+}
 footer a i:hover {
   transform: scale(2);
 }
-
 @import "./partials/queries";
