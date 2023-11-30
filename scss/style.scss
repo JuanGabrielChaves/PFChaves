@@ -25,6 +25,14 @@
   font-family: $titleFont;
 }
 
+.navbar-brand:hover{
+  transform: scale(1.1);
+}
+
+.btn-buscar:hover{
+  background-color: $btnSearch;
+  font-weight: bolder;
+}
 .nav-link {
   color: $navColor;
 }

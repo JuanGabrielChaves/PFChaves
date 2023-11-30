@@ -23,6 +23,15 @@
   font-family: "Roboto";
 }
 
+.navbar-brand:hover {
+  transform: scale(1.1);
+}
+
+.btn-buscar:hover {
+  background-color: #cec7c5;
+  font-weight: bolder;
+}
+
 .nav-link {
   color: #4f4f4f;
 }
@@ -79,7 +88,7 @@
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: #0cf;
+  background-color: #cec7c7;
   border-radius: 10rem;
   z-index: -2;
 }
@@ -90,7 +99,7 @@
   left: 0;
   width: 0%;
   height: 100%;
-  background-color: #008fb3;
+  background-color: #aa9e9e;
   transition: all 0.3s;
   border-radius: 10rem;
   z-index: -1;
