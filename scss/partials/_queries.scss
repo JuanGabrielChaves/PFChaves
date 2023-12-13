@@ -75,6 +75,7 @@
     grid-template-columns: repeat(2, 1fr);
     grid-template-areas: "card card";
     gap: 1rem;
+    margin-left: 1rem;
   }
   .botonera-redes {
     width: 90vw;
@@ -89,4 +90,8 @@
   .card {
     width: 90%;
   }
+  .botonera-redes {
+    width: 80vw;
+  }
+
 }

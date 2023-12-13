@@ -7,6 +7,10 @@
   box-sizing: border-box;
 }
 
+body {
+  max-width: 97vw;
+}
+
 .main {
   height: 80vh;
   overflow: auto;
@@ -111,7 +115,7 @@
   width: 100%;
 }
 
-h3 {
+h3, h4 {
   text-align: center;
 }
 
@@ -221,6 +225,7 @@ footer a i:hover {
     grid-template-columns: repeat(2, 1fr);
     grid-template-areas: "card card";
     gap: 1rem;
+    margin-left: 1rem;
   }
   .botonera-redes {
     width: 90vw;
@@ -233,6 +238,9 @@ footer a i:hover {
   }
   .card {
     width: 90%;
+  }
+  .botonera-redes {
+    width: 80vw;
   }
 }
 
