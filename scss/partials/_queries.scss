@@ -1,6 +1,6 @@
 @media screen and (min-width: 280px) {
   .navbar-brand {
-    display: none;
+    display: block;
   }
   .card {
     width: 95vw;
@@ -23,7 +23,7 @@
 }
 
 @media screen and (min-width: 360px) {
-  
+
   .card {
     width: 85vw;
   }

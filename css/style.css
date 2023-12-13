@@ -155,7 +155,7 @@ footer a i:hover {
 
 @media screen and (min-width: 280px) {
   .navbar-brand {
-    display: none;
+    display: block;
   }
   .card {
     width: 95vw;
